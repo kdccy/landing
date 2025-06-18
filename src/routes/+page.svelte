@@ -172,6 +172,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>{translations[lang].title}</title>
+</svelte:head>
+
 <!-- Header -->
 <header class="sticky top-0 z-10 bg-white text-black {scrolled ? 'md:opacity-50' : ''}">
   <nav class="container mx-auto flex items-center justify-between px-6 py-4">
@@ -194,8 +198,8 @@
           on:change={() => localStorage.setItem('lang', lang)}
           class="rounded-lg bg-gray-200 p-2 text-black"
         >
-          <option value="ko">Ko</option>
-          <option value="en">En</option>
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
         </select>
       </li>
     </ul>
@@ -264,8 +268,8 @@
             }}
             class="w-full rounded-lg bg-gray-200 p-2 text-black"
           >
-            <option value="ko">Ko</option>
-            <option value="en">En</option>
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
           </select>
         </li>
       </ul>
