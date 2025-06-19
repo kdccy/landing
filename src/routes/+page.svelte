@@ -179,7 +179,7 @@
 <!-- Header -->
 <header class="sticky top-0 z-10 bg-white text-black {scrolled ? 'md:opacity-50' : ''}">
   <nav class="container mx-auto flex items-center justify-between px-6 py-4">
-    <h1 class="text-2xl font-bold">{translations[lang].title}</h1>
+    <img class="h-4" src="/kdc_logo.svg" alt="KDC Logo" />
 
     <!-- Desktop menu -->
     <ul class="hidden items-center space-x-6 md:flex">
